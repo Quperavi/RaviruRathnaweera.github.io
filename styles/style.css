@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}                                          
+
+/* Background Light Gray - A very light gray used as the main background color:
+
+Hex: #F4F6F9
+Dark Gray - Used for the main text and menu items:
+
+Hex: #333333
+Accent Red - Highlighted text and buttons:
+
+Hex: #E53935
+Secondary Gray - Used for lighter text and subheadings:
+
+Hex: #666666
+Soft Pinkish Gray - A very subtle color used as a background accent behind the image:
+
+Hex: #EFEFF3
+Button Background Red - Strong red for the button:
+
+Hex: #E53935*/
+
+body{
+  background-color: #F4F6F9;
+  color:#333333; 
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: bold;
+  font-style:normal ;
+  font-size: large;
+}
+
+.nav-bar{
+  display: flex;
+ padding: 20px 20px 0 20px;
+
+
+}
+
+.nav-bar-part1{
+   padding-left: 100px;
+}
+
+.nav-bar-part2{
+    list-style-type: none;
+    display:flex ;
+    margin-left:20%;
+    margin-top: 20px;
+}
+
+.nav-bar-li{
+    padding-left: 100px;
+}
+
+.image-contain{
+    position: relative;
+    height:auto;
+    overflow:hidden;
+   
+    
+}
+.prof-img {
+   
+    height: auto;
+    object-fit: cover;
+   
+}
+
+.after-nav-bar{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+.after-nav-bar-text{
+    display: flex;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    align-content: flex-end;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.word-raviru{
+    color: #FF0000;
+}
+.custom-line {
+    width: 40px;       /* Adjust the width as needed, e.g., 50%, 80%, or a specific pixel width like 600px */
+    border: none;      /* Removes the default border style */
+    height: 2px;       /* Sets the thickness of the line */
+    background-color: black; /* Sets the color of the line */
+    margin: 20px 0;    /* Adds space above and below the line */
+}
+
+.hr-hello-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.hello-text{
+    padding-left: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-style:normal ;
+    font-size: large;
+}
+
+.after-intropara-text{
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: bold;
+    font-style:normal ;
+    font-size: large;
+}
+
+.nav-bar-part2 li a {
+    text-decoration: none;
+    color: #333333;
+    
+}
+
+nav li a:hover{
+    color: #FF0000;;
+}
+
+#logo{
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(0.9); 
+}
+
+#cv-link {
+
+  color:bisque;
+  background-color:#FF0000;
+  padding: 8px 13px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-size: medium;
+  transition: transform 0.3s ease;
+  border: 2px solid #FF0000;
+  border-radius: 15px;
+
+}
+
+#cv-link:hover{
+    transform: scale(1.1); 
+
+}
+
+.srilanka-img{
+    width: 30px;
+    height: auto;
+    margin-top:10px ;
+}
+
+.sl-and-jp-img{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#sl-img{
+    margin-left:10px ;
+}
+
+.wrapper{
+    display: inline-flex;
+    
+}
+
+.social-text-el{
+    margin-bottom: 10px;
+    font-size: 10px;
+    background: #fff;
+    padding: 10px 18px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.social-text-el i {
+    line-height: 60px;
+}
+.icon.fb{
+    margin-left:0;
+}
+.icon{
+    margin: 0px 5px;
+    display: flex;
+    width: 80px;
+    height: 100px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.icon i{
+    font-size:large;
+}
+.wrapper .icon span{
+    position: relative; 
+    height: 40px;
+    width: 40px;
+    display: block;
+    background:#fff ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    
+}
+
+.wrapper .icon span:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background:#fff;
+    left: 50%;
+    top:-20px;  
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+ 
+.icon:hover {
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+}
+.social-link{
+    text-decoration: none;
+    color: #333333;
+
+}
+
+.fab.fa-facebook-f:hover{
+    color:#1877F2;
+}
+
+.fab.fa-twitter:hover{
+    color:#1DA1F2;
+}
+
+.fab.fa-instagram:hover{
+    color: #E1306C;
+}
+
+.icon.github:hover{
+    color:#181717;
+}
