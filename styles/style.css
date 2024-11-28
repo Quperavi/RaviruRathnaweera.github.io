@@ -476,6 +476,7 @@ nav li a:hover{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom:100px;
 }
 
 .project-icons{
